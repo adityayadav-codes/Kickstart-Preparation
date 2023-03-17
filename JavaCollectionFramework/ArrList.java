@@ -10,37 +10,37 @@ Create an ArrayList of student names:
 */
 
 
-// public class ArrList {
+public class ArrList {
 
-//     public static void main(String [] args) {
+    public static void main(String [] args) {
 
-//         ArrayList<String> list = new ArrayList<>();
+        ArrayList<String> list = new ArrayList<>();
 
-//         // add()=================================
-//         list.add("Aditya Yadav");
-//         list.add("Akash Yadav"); 
-//         list.add("Anil Singh");
-//         list.add("Chandan Thakur");
-//         list.add("Abhishek Yadav");
-//         list.add("Daksh Chauhan");
-//         list.add("Deepak Kumar");
+        // add()=================================
+        list.add("Aditya Yadav");
+        list.add("Akash Yadav"); 
+        list.add("Anil Singh");
+        list.add("Chandan Thakur");
+        list.add("Abhishek Yadav");
+        list.add("Daksh Chauhan");
+        list.add("Deepak Kumar");
 
-//         // get()=================================
-//             System.out.println(list.get(0));
-//             System.out.println(list.get(1));
-//             System.out.println(list.get(2));
-//             System.out.println(list.get(3));
-//             System.out.println(list.get(4));
-//             System.out.println(list.get(5)); 
+        // get()=================================
+            System.out.println(list.get(0));
+            System.out.println(list.get(1));
+            System.out.println(list.get(2));
+            System.out.println(list.get(3));
+            System.out.println(list.get(4));
+            System.out.println(list.get(5)); 
 
-//         // remove ==================================
-//         list.remove(2);
-//         System.out.println(list);     
+        // remove ==================================
+        list.remove(2);
+        System.out.println(list);     
 
-//     // size () =========================================
-//     System.out.println(list.size());
-//     }
-// }
+    // size () =========================================
+    System.out.println(list.size());
+    }
+}
 
 // 1️⃣ Create ArrayList of integers
 // 	•	Add elements
@@ -98,21 +98,4 @@ Create an ArrayList of student names:
 //     }    
 // }
 
-// Removes Duplicates From Array 
-
-public class ArrList {
-	
-	public static void main(String [] args) {
-
-		int [] arr = {1,2,3,2,4,1};
-
-		HashSet <Integer> set = new HashSet<>();
-
-		for(int i : arr) {
-
-			set.add(i);
-		}
-
-		System.out.println(set);
-	}
-}
+/
