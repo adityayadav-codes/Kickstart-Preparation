@@ -61,7 +61,16 @@ static void reversArrayWithPointer (int arr[]) {
     }
     for(int num : arr) System.out.println(num);
 }
-
+    static void missingNumber(int arr[]) {
+    int n = 4;
+    int totalArray = n * (n + 1)/2;
+    int sumArray = 0;
+    for(int i = 0; i < arr.length; i ++) {
+        sumArray += arr[i];
+    }
+    int missingNumber = totalArray - sumArray;
+    System.out.println("Missing Number : "+missingNumber);
+}
     public static void main(String[] args) {
         int arr[] = {1,3,4};
         // moveZeroesToEnd(arr);
