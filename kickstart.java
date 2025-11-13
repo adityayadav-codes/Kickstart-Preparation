@@ -37,46 +37,48 @@
 
 
 // binary search 
-import java.util.Scanner;
-public  class kickstart {
+// import java.util.Scanner;
+// public  class kickstart {
 	
-	static int binarySearch(int arr [], int x ) {
+// 	static int binarySearch(int arr [], int x ) {
 		
-		 int low =0, high = arr.length-1;
-		// int low =0, high = arr.length -1;
+// 		 int low =0, high = arr.length-1;
+// 		// int low =0, high = arr.length -1;
 		
-	while(low <= high) {
+// 	while(low <= high) {
 			
-			int mid = low + (high - low)/2;
+// 			int mid = low + (high - low)/2;
 				
-				if(arr[mid] == x) {
+// 				if(arr[mid] == x) {
 		
-					return mid;
-			} else  if (arr[mid] <  x) {
+// 					return mid;
+// 			} else  if (arr[mid] <  x) {
 		
-				low = mid + 1;
-			}	else {
+// 				low = mid + 1;
+// 			}	else {
 				
-				high = mid -1;
-			}
-		}
-		return -1;
-	}
+// 				high = mid -1;
+// 			}
+// 		}
+// 		return -1;
+// 	}
 		
-		//main method
-	public static void main(String args []) {
+// 		//main method
+// 	public static void main(String args []) {
 			
-		int arr[] = {2, 3, 4, 10, 40};
+// 		int arr[] = {2, 3, 4, 10, 40};
 			
-			int x = 11;
-			int result = binarySearch(arr,x);
+// 			int x = 11;
+// 			int result = binarySearch(arr,x);
 				
-				if(result  == -1) {
+// 				if(result  == -1) {
 				
-				System.out.println("Element not found");
-		} else {
+// 				System.out.println("Element not found");
+// 		} else {
 			
-				System.out.println("Element found at index " + result);
-		}
-	}
-}
+// 				System.out.println("Element found at index " + result);
+// 		}
+// 	}
+// }
+
+//sorting in java
