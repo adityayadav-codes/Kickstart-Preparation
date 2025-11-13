@@ -84,36 +84,71 @@
 //sorting in java
 //bubble sort
 
+// import java.util.Scanner;
+// public class kickstart {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the number of elements:");
+//         int n = sc.nextInt();
+
+//         int[] arr = new int[n];
+//         System.out.println("Enter " + n + " elements:");
+//         for (int i = 0; i < n; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+
+//         // Bubble sort logic
+//         for (int i = 0; i < n - 1; i++) {
+//             for (int j = 0; j < n - i - 1; j++) {
+//                 if (arr[j] > arr[j + 1]) {
+//                     int temp = arr[j];
+//                     arr[j] = arr[j + 1];
+//                     arr[j + 1] = temp;
+//                 }
+//             }
+//         }
+
+//         System.out.println("Sorted array:");
+//         for (int i = 0; i < n; i++) {
+//             System.out.print(arr[i] + " ");
+//         }
+
+//         sc.close();
+//     }
+// }
+
+//Insertion sort
 import java.util.Scanner;
 public class kickstart {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of elements:");
+		int n = sc.nextInt();
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number of elements:");
-        int n = sc.nextInt();
+		int[] arr = new int[n];
+		System.out.println("Enter " + n + " elements:");
+		for (int i = 0; i < n; i++) {
+			arr[i] = sc.nextInt();
+		}
 
-        int[] arr = new int[n];
-        System.out.println("Enter " + n + " elements:");
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-        }
+		// Insertion sort logic
+		for (int i = 1; i < n; i++) {
+			int key = arr[i];
+			int j = i - 1;
 
-        // Bubble sort logic
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = 0; j < n - i - 1; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                }
-            }
-        }
+			while (j >= 0 && arr[j] > key) {
+				arr[j + 1] = arr[j];
+				j = j - 1;
+			}
+			arr[j + 1] = key;
+		}
 
-        System.out.println("Sorted array:");
-        for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + " ");
-        }
+		System.out.println("Sorted array:");
+		for (int i = 0; i < n; i++) {
+			System.out.print(arr[i] + " ");
+		}
 
-        sc.close();
-    }
+		sc.close();
+	}
 }
