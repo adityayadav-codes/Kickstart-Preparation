@@ -221,23 +221,46 @@
 //             System.out.println(kick.display(100));
 //             System.out.println(kick.display("Aadi"));
 //     }
+// // }
+// public class kickstart {
+    
+//     public static void staticMethod() {
+        
+//         System.out.println("Static Method");
+//     }
+//     public void nonStaticMethod() {
+        
+//         System.out.println("Non - Static Method"); 
+//     }
+    
+//     public static void main(String args []) {
+//             staticMethod();
+//             kickstart kick = new kickstart();
+//             kick.nonStaticMethod();
+       
+//     }
 // }
+
 public class kickstart {
     
-    public static void staticMethod() {
-        
-        System.out.println("Static Method");
+    String name;
+    int age;
+    double marks;
+        public  void printdetials(){
+            
+            System.out.println("Name : "+name);
+            System.out.println("Age  : "+age);
+            System.out.println("marks : "+marks);
     }
-    public void nonStaticMethod() {
-        
-        System.out.println("Non - Static Method"); 
-    }
-    
     public static void main(String args []) {
-            staticMethod();
-            kickstart kick = new kickstart();
-            kick.nonStaticMethod();
+    
        
+        kickstart kick = new kickstart();
+		kick.name = "Aadi";
+		kick.age = 21;
+		kick.marks = 89.5;
+        kick.printdetials();
     }
 }
+
 
