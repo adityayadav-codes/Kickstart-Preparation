@@ -239,28 +239,49 @@
 //             kick.nonStaticMethod();
        
 //     }
+// // }
+
+// public class kickstart {
+    
+//     String name;
+//     int age;
+//     double marks;
+//         public  void printdetials(){
+            
+//             System.out.println("Name : "+name);
+//             System.out.println("Age  : "+age);
+//             System.out.println("marks : "+marks);
+//     }
+//     public static void main(String args []) {
+    
+       
+//         kickstart kick = new kickstart();
+// 		kick.name = "Aadi";
+// 		kick.age = 21;
+// 		kick.marks = 89.5;
+//         kick.printdetials();
+//     }
 // }
 
 public class kickstart {
-    
-    String name;
-    int age;
-    double marks;
-        public  void printdetials(){
-            
-            System.out.println("Name : "+name);
-            System.out.println("Age  : "+age);
-            System.out.println("marks : "+marks);
-    }
-    public static void main(String args []) {
-    
-       
-        kickstart kick = new kickstart();
-		kick.name = "Aadi";
-		kick.age = 21;
-		kick.marks = 89.5;
-        kick.printdetials();
-    }
+
+	public int add(int a, int b) {
+		return a + b;
+	}
+	public int subrract(int a, int b) {
+		return a - b;
+	}
+	public int multiply(int a, int b) {
+		return a * b;
+	}
+	public double divide(double  a, double  b) {
+		return a / (double)b;
+	}
+	public static void main(String[] args) {
+		kickstart kick = new kickstart();
+		System.out.println("Addition : " + kick.add(10, 5));
+		System.out.println("Subtraction : " + kick.subrract(10, 5));
+		System.out.println("Multiplication : " + kick.multiply(10, 5));
+		System.out.println("Division : " + kick.divide(10, 5));
+	}
 }
-
-
