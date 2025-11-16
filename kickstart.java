@@ -1,7 +1,7 @@
 // import java.util.Scanner;
 // public class kickPre {
 
-//     public static void main(String args[]) {
+//     public static int main(String args[]) {
 
 //         Scanner sc = new Scanner (System.in);
 //         System.out.println("Enter the number of element to be enter: ");
@@ -64,7 +64,7 @@
 // 	}
 		
 // 		//main method
-// 	public static void main(String args []) {
+// 	public static int main(String args []) {
 			
 // 		int arr[] = {2, 3, 4, 10, 40};
 			
@@ -87,7 +87,7 @@
 // import java.util.Scanner;
 // public class kickstart {
 
-//     public static void main(String[] args) {
+//     public static int main(String[] args) {
 //         Scanner sc = new Scanner(System.in);
 //         System.out.println("Enter the number of elements:");
 //         int n = sc.nextInt();
@@ -121,7 +121,7 @@
 // //Insertion sort
 // import java.util.Scanner;
 // public class kickstart {
-// 	public static void main(String[] args) {
+// 	public static int main(String[] args) {
 // 		Scanner sc = new Scanner(System.in);
 // 		System.out.println("Enter the number of elements:");
 // 		int n = sc.nextInt();
@@ -156,7 +156,7 @@
 // 2-D array
 // public class kickstart {
 
-// 	public static void main (String args []) {
+// 	public static int main (String args []) {
 
 // 		int sum =0;
 // 		int [] [] arr = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
@@ -182,28 +182,43 @@
 
 
 //Day 5: Funtion overloading in java
-public class kickstart {
+// public class kickstart {
     
-     public int func() {
+//      public int func() {
         
-        int a = 10;
-        int b = 30;
-        int c = a + b;
-       return c;
-    }
-   public int func(int x, int y) {
+//         int a = 10;
+//         int b = 30;
+//         int c = a + b;
+//        return c;
+//     }
+//    public int func(int x, int y) {
         
-        int a = x;
-        int b = y;
-        int c = a * b;
-       return c; 
-    }
-    public static void main(String args[]) {
+//         int a = x;
+//         int b = y;
+//         int c = a * b;
+//        return c; 
+//     }
+//     public static int main(String args[]) {
         
-        kickstart obj = new kickstart();
+//         kickstart obj = new kickstart();
 		
-			System.out.println("Function overloading in java:");
-			System.out.println(obj.func());
-			System.out.println(obj.func(10, 20));
-	}
-	}
+// 			System.out.println("Function overloading in java:");
+// 			System.out.println(obj.func());
+// 			System.out.println(obj.func(10, 20));
+// 	}
+// 	}
+
+public class kickstart{
+    
+        public int display(int x) {
+            return x;
+    }
+        public String  display(String s) {
+            return s;
+    }
+        public static void main (String args []) {
+            kickstart kick = new kickstart();
+            System.out.println(kick.display(100));
+            System.out.println(kick.display("Aadi"));
+    }
+}
