@@ -208,17 +208,36 @@
 // 	}
 // 	}
 
-public class kickstart{
+// public class kickstart{
     
-        public int display(int x) {
-            return x;
+//         public int display(int x) {
+//             return x;
+//     }
+//         public String  display(String s) {
+//             return s;
+//     }
+//         public static void main (String args []) {
+//             kickstart kick = new kickstart();
+//             System.out.println(kick.display(100));
+//             System.out.println(kick.display("Aadi"));
+//     }
+// }
+public class kickstart {
+    
+    public static void staticMethod() {
+        
+        System.out.println("Static Method");
     }
-        public String  display(String s) {
-            return s;
+    public void nonStaticMethod() {
+        
+        System.out.println("Non - Static Method"); 
     }
-        public static void main (String args []) {
+    
+    public static void main(String args []) {
+            staticMethod();
             kickstart kick = new kickstart();
-            System.out.println(kick.display(100));
-            System.out.println(kick.display("Aadi"));
+            kick.nonStaticMethod();
+       
     }
 }
+
