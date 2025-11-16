@@ -154,28 +154,56 @@
 // }
 
 // 2-D array
+// public class kickstart {
+
+// 	public static void main (String args []) {
+
+// 		int sum =0;
+// 		int [] [] arr = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
+
+// 		System.out.println("2-D array is: ");
+// 		for(int i =0; i < arr.length; i++) {
+// 			for(int j =0; j <  arr [i].length; j++){
+// 				System.out.print(arr[i][j] + " ");
+// 			}	
+// 			System.out.println();
+// 	}
+// 	for(int i =0 ; i < arr.length; i++) {
+
+// 		for ( int j =0; j < arr [i].length; j++) {
+
+// 			sum += arr [i][j];
+
+// 		}	
+// 	}
+// 	System.out.println("Sum of all elements in 2-D array is: " + sum);
+// }
+// }
+
+
+//Day 5: Funtion overloading in java
 public class kickstart {
-
-	public static void main (String args []) {
-
-		int sum =0;
-		int [] [] arr = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
-
-		System.out.println("2-D array is: ");
-		for(int i =0; i < arr.length; i++) {
-			for(int j =0; j <  arr [i].length; j++){
-				System.out.print(arr[i][j] + " ");
-			}	
-			System.out.println();
+    
+     public int func() {
+        
+        int a = 10;
+        int b = 30;
+        int c = a + b;
+       return c;
+    }
+   public int func(int x, int y) {
+        
+        int a = x;
+        int b = y;
+        int c = a * b;
+       return c; 
+    }
+    public static void main(String args[]) {
+        
+        kickstart obj = new kickstart();
+		
+			System.out.println("Function overloading in java:");
+			System.out.println(obj.func());
+			System.out.println(obj.func(10, 20));
 	}
-	for(int i =0 ; i < arr.length; i++) {
-
-		for ( int j =0; j < arr [i].length; j++) {
-
-			sum += arr [i][j];
-
-		}	
 	}
-	System.out.println("Sum of all elements in 2-D array is: " + sum);
-}
-}
