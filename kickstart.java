@@ -263,25 +263,46 @@
 //     }
 // }
 
+// public class kickstart {
+
+// 	public int add(int a, int b) {
+// 		return a + b;
+// 	}
+// 	public int subrract(int a, int b) {
+// 		return a - b;
+// 	}
+// 	public int multiply(int a, int b) {
+// 		return a * b;
+// 	}
+// 	public double divide(double  a, double  b) {
+// 		return a / (double)b;
+// 	}
+// 	public static void main(String[] args) {
+// 		kickstart kick = new kickstart();
+// 		System.out.println("Addition : " + kick.add(10, 5));
+// 		System.out.println("Subtraction : " + kick.subrract(10, 5));
+// 		System.out.println("Multiplication : " + kick.multiply(10, 5));
+// 		System.out.println("Division : " + kick.divide(10, 5));
+// 	}
+//}
+
+// Day 6:
 public class kickstart {
 
-	public int add(int a, int b) {
-		return a + b;
-	}
-	public int subrract(int a, int b) {
-		return a - b;
-	}
-	public int multiply(int a, int b) {
-		return a * b;
-	}
-	public double divide(double  a, double  b) {
-		return a / (double)b;
+		String name ;
+		int age;
+		//default constructor 
+	public kickstart() {
+		
+		name = "Unknown";
+		age = 17;
+		System.out.println("Default Constructor Called");
 	}
 	public static void main(String[] args) {
 		kickstart kick = new kickstart();
-		System.out.println("Addition : " + kick.add(10, 5));
-		System.out.println("Subtraction : " + kick.subrract(10, 5));
-		System.out.println("Multiplication : " + kick.multiply(10, 5));
-		System.out.println("Division : " + kick.divide(10, 5));
+		System.out.println("Name : "+kick.name);
+		System.out.println("Age  : "+kick.age);
+
 	}
+
 }
