@@ -1,8 +1,8 @@
 public class Demo {
-
-    public static void main(String [] args){
-        System.out.println("Aditya Yadav");
-        System.out.println("Mehnagar, Azamgarh");
-        System.out.println("727984934");
-    }
+    static int a = 10;
+    static int b = 20;
+    
+        public static void main(String [] args ) {
+            System.out.println("Sum is : " +(a + b));
+        }
 }
