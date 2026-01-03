@@ -1,7 +1,10 @@
+import java.util.Scanner;
 public class Demo {
-    static int a = 10;
-    static int  b = 20;
-     public static void main(String [] args ) {
-        System.out.println("Multpliction is : " +(a * b));
-     }
+    public static void main(String [] args ){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the age :");
+        int age = sc.nextInt();
+        System.out.println("Your age is : " + age);
+        sc.getClass();
+    }
 }
