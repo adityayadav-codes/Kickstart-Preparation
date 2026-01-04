@@ -1,19 +1,12 @@
-
-import java.util.Scanner;
 public class Demo {
-    
     public static void main(String [] args) {
-    
-        Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
-        
-        if (num > 0) {
-            System.out.println("Positive Number!" );
+        int a = 5;
+        int b = 10;
 
-        } else if (num < 0) {
-            System.out.println("Negative Number!");
+        if(a > b) {
+            System.out.println("A is greater than b");
         } else {
-            System.out.println("Zero");
+            System.out.println("B is greater than or equal to A");
         }
     }
 }
