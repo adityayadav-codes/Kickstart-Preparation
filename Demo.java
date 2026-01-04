@@ -1,12 +1,19 @@
-public class Demo {
 
-     public static void main(String [] args) {
-            int num = 10;
-            if(num % 2 == 0) {
-                System.out.println("Even Number!");
-            }
-            else {
-                System.out.println("odd Number!");
-            }
-     }
+import java.util.Scanner;
+public class Demo {
+    
+    public static void main(String [] args) {
+    
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        
+        if (num > 0) {
+            System.out.println("Positive Number!" );
+
+        } else if (num < 0) {
+            System.out.println("Negative Number!");
+        } else {
+            System.out.println("Zero");
+        }
+    }
 }
