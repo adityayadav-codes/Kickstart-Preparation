@@ -1,7 +1,12 @@
-public class Demo{
-    static int age = 25;
-    public static void main(String [] args ) {
-        if (age > 18)
-        System.out.println("You r adult");
+public class Demo {
+    static double marks = 89.5;
+    static String grade = "A";
+    public static void main(String[] args) {
+        if(marks >=33) {
+            System.out.println("Student has passed with grade: " + grade);
+        }
+        if (marks < 33) {
+            System.out.println("Student has failed.");
+        }
     }
 }
