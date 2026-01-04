@@ -1,12 +1,12 @@
 public class Demo {
-    static double marks = 89.5;
-    static String grade = "A";
-    public static void main(String[] args) {
-        if(marks >=33) {
-            System.out.println("Student has passed with grade: " + grade);
-        }
-        if (marks < 33) {
-            System.out.println("Student has failed.");
-        }
-    }
+
+     public static void main(String [] args) {
+            int num = 10;
+            if(num % 2 == 0) {
+                System.out.println("Even Number!");
+            }
+            else {
+                System.out.println("odd Number!");
+            }
+     }
 }
