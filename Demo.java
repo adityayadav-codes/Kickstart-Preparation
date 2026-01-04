@@ -8,3 +8,4 @@ public class Demo {
         sc.getClass();
     }
 }
+// logic - logic is in programming a set of instructions to perform a specific task or solve a problem. It involves using control structures, data manipulation, and algorithms to achieve the desired outcome. 
