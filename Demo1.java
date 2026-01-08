@@ -1,13 +1,13 @@
 public class Demo1 {
 
-    static int sum = 0;
-    public static void main(String [] args) {
-        int i = 1;
-        while (i <=10) {
-        
-            sum += i;
-            System.out.println("Sum after adding " + i + " is: " + sum);
-            i++;
-        }
-    }
+     public static void main(String [] args ) {
+
+            for(int i = 1; i <=5;i++) {
+
+                for(int j =1; j <= 1; j++) {
+
+                    System.out.println("* ");
+                }
+            }
+     }
 }
