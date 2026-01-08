@@ -1,14 +1,11 @@
-public class Demo1 {
-    public static void main(String [] args) {
-        int i = 1;
-        System.out.print("Odd numbers between 1 and 20 are: ");
-        while (i <=20){
-            if(i % 2 ==0){
+public class Demo1{
+    static int i =10;
+    public static void main(String[] args) {
+        System.out.println("Reverse Order: ");
+        while(i>0){
+            System.out.println(i);
 
-            } else {
-                System.out.print(i + " ");
-            }
-            i++;
+            i--;
         }
     }
 }
