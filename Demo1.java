@@ -1,11 +1,13 @@
 public class Demo1 {
-
-    static int i=1;
     public static void main(String [] args) {
+        int i = 1;
+        System.out.print("Odd numbers between 1 and 20 are: ");
+        while (i <=20){
+            if(i % 2 ==0){
 
-        while (i <= 10)  {
-
-            System.out.println(i);
+            } else {
+                System.out.print(i + " ");
+            }
             i++;
         }
     }
