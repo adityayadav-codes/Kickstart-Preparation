@@ -1,10 +1,12 @@
 public class Demo1 {
 
+    static int i=1;
     public static void main(String [] args) {
-        int sum = 0;
-        for (int i = 1; i <= 10; i++ ) {
-            sum += i;
-             System.out.println("Sum after adding " + i + " is: " + sum);
+
+        while (i <= 10)  {
+
+            System.out.println(i);
+            i++;
         }
     }
 }
