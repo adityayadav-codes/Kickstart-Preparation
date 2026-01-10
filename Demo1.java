@@ -1,10 +1,17 @@
 public class Demo1 {
-public static void main(String[] args) {
-    int [] num = {50, 100, 150, 200, 250};
-    int sum = 0;
-    for(int i =0; i <num.length; i++) {
-        sum += num[i];
+    public static void main (String [] args) {
+        int arr[] = {10, 20, 70, -10, 50};
+        int max = arr[0];
+        int min = arr[0];
+        for(int i =0;i <arr.length;i++) {
+            if(arr[i] > max) {
+                max = arr[i];
+            }
+            if(arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        System.out.println("The maximum element is: " + max);
+        System.out.println("The minimum element is: " + min);
     }
-    System.out.println("The sum is: " + sum);
-}
 }
