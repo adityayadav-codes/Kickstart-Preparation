@@ -1,17 +1,21 @@
 public class Demo1 {
-    public static void main (String [] args) {
-        int arr[] = {10, 20, 70, -10, 50};
-        int max = arr[0];
-        int min = arr[0];
-        for(int i =0;i <arr.length;i++) {
-            if(arr[i] > max) {
-                max = arr[i];
+    static int arr[] = {34, -2, 45, 29, 8, -10, 0, 99, 23};
+    static int maxNumber = arr[0];
+    static int minNumber = arr[0];
+    public static void main(String [] args) {
+        
+        for(int i = 1; i <arr.length; i++) {
+            if(arr[i] > maxNumber) {
+                maxNumber = arr[i];
             }
-            if(arr[i] < min) {
-                min = arr[i];
-            }
+          else if (arr[i]< minNumber) {
+                minNumber = arr[i];
+          }  
+          else {
+              continue;
+          }
         }
-        System.out.println("The maximum element is: " + max);
-        System.out.println("The minimum element is: " + min);
+        System.out.println("Maximum number in the array is : "+maxNumber);
+        System.out.println("Minimum number in the array is : "+minNumber);
     }
 }
