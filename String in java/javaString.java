@@ -13,9 +13,16 @@ public class javaString {
             }
              System.out.println("Total Consonants:"+count);
        }
-    public static void main(String [] args) {
+        void reverseString() {
+            String str = "java";
+            for(int i = str.length()-1; i>=0; i--) {
+                System.out.println(str.charAt(i));
+            }
+        }
+       public static void main(String [] args) {
         javaString js = new javaString();
         js.countConsonants();
+       js.reverseString();
         String str = "java";
        int  count =0;
 
