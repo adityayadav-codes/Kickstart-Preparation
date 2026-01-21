@@ -66,6 +66,11 @@ public class javaString {
         System.out.println(a ==c);// false, because a is in string pool and c is in heap memory
          System.out.println(a.equals(c));// true, because equals method compares the content of the string
     }
+    void containsMethod() {
+        String str = "my life is java";
+        System.out.println(str.contains("java"));
+        System.out.println(str.contains("python"));
+    }
     public static void main(String [] args) {
         javaString js = new javaString();
        // js.countConsonants();
@@ -73,6 +78,7 @@ public class javaString {
       // js.countVowels();
     //   js.stringUpperCaseMethod();
         //  js.stringLowerCaseMethod();
-          js.equalsMethod();
+          //js.equalsMethod();
+            js.containsMethod();
         }
  }
