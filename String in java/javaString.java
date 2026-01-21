@@ -51,13 +51,18 @@ public class javaString {
                  System.out.println("Access Granted");
 }
     }
+    void equalsMethod() {
+        String str ="java";
+        String str1 = "java";
+        System.out.println(str == str1); 
+    }
     public static void main(String [] args) {
         javaString js = new javaString();
        // js.countConsonants();
        //js.reverseString();
       // js.countVowels();
     //   js.stringUpperCaseMethod();
-         js.stringLowerCaseMethod();
-    }
-
+        //  js.stringLowerCaseMethod();
+          js.equalsMethod();
+        }
  }
