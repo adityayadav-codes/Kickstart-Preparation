@@ -1,6 +1,7 @@
+
 public class javaString {
 
-       void countConsonants(){
+    void countConsonants(){
          String str = "java";
         int count =0;
 
@@ -13,24 +14,13 @@ public class javaString {
             }
              System.out.println("Total Consonants:"+count);
        }
-        void reverseString() {
+    void reverseString() {
             String str = "java";
             for(int i = str.length()-1; i>=0; i--) {
                 System.out.println(str.charAt(i));
             }
         }
-        // void countVowels() {
-        //     // String sr = "Hello java Programming";
-        //     // int count =0;
-        //     // for(int i =0; i < sr.length(); i++) {
-        //     //     if(sr.charAt(i)=='a'|| sr.charAt(i)=='e'|| sr.charAt(i)=='i'|| sr.charAt(i)=='o'|| sr.charAt(i)=='u') {
-        //     //         System.out.println("Vowel: " + sr.charAt(i) + " at index " + i);
-        //     //         count++;
-        //     //     }
-        //     // }
-        //     // System.out.println("Total Vowels: " + count);
-        // }
-        void  countVowels() {
+    void  countVowels() {
 	String str = "Java";
 	int count =0;
 	for(int i = 0; i < str.length(); i++) {
@@ -42,8 +32,7 @@ public class javaString {
 	}
 	System.out.println("Total Vowels "+count);
 }
-
-   void stringUpperCaseMethod() {
+    void stringUpperCaseMethod() {
 	String str = "java";
 	String rts = str.toUpperCase();
 		System.out.println(rts);
@@ -51,12 +40,24 @@ public class javaString {
         str1 = str1.toUpperCase();
         System.out.println(str1);
 }
-public static void main(String [] args) {
+    void stringLowerCaseMethod(){
+        String str = "JAVA";
+	    String str2 = str.toLowerCase();
+		
+		    System.out.println(str2);
+            String input = "Admin";
+
+            if(input.toLowerCase().equals("admin")) {
+                 System.out.println("Access Granted");
+}
+    }
+    public static void main(String [] args) {
         javaString js = new javaString();
        // js.countConsonants();
        //js.reverseString();
       // js.countVowels();
-      js.stringUpperCaseMethod();
+    //   js.stringUpperCaseMethod();
+         js.stringLowerCaseMethod();
     }
 
  }
