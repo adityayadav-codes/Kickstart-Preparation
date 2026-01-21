@@ -78,9 +78,9 @@ public class javaString {
         }
             String email = "example001@gmail.com";
             if(email.contains("@gmail.com1")) {
-                System.out.println("Valid Gmail Address");
+                System.out.println("Valid Gmail Address!!");
             } else {
-                System.out.println("Invalid Gmail Address");
+                System.out.println("Invalid Gmail Address!!");
             }
     }
     public static void main(String[] args) {
