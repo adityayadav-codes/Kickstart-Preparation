@@ -47,6 +47,9 @@ public class javaString {
 	String str = "java";
 	String rts = str.toUpperCase();
 		System.out.println(rts);
+        String str1 = "hello sulluulu";
+        str1 = str1.toUpperCase();
+        System.out.println(str1);
 }
 public static void main(String [] args) {
         javaString js = new javaString();
