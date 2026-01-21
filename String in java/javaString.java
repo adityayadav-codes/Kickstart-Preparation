@@ -31,7 +31,6 @@ public class javaString {
         //     // System.out.println("Total Vowels: " + count);
         // }
         void  countVowels() {
-
 	String str = "Java";
 	int count =0;
 	for(int i = 0; i < str.length(); i++) {
@@ -44,12 +43,17 @@ public class javaString {
 	System.out.println("Total Vowels "+count);
 }
 
-
-        public static void main(String [] args) {
+   void stringMethod() {
+	String str = "java";
+	String rts = str.toUpperCase();
+		System.out.println(rts);
+}
+public static void main(String [] args) {
         javaString js = new javaString();
        // js.countConsonants();
        //js.reverseString();
-       js.countVowels();
+      // js.countVowels();
+      js.stringMethod();
     }
 
  }
