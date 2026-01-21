@@ -55,10 +55,14 @@ public class javaString {
         String str ="java";
         String str1 = "java";
         String str2 = new String("java Programming");
-        System.out.println(str == str1); 
-        System.out.println(str1 == str2);
-        String str3 = new String("java");
-        System.out.println(str.equals(str3));
+        // System.out.println(str == str1); 
+        // System.out.println(str1 == str2);
+        // String str3 = new String("java");
+        // System.out.println(str.equals(str3));
+        String a = "aadi";
+        String b = "aadi";
+        System.out.println(a == b);// true
+        
     }
     public static void main(String [] args) {
         javaString js = new javaString();
