@@ -54,7 +54,11 @@ public class javaString {
     void equalsMethod() {
         String str ="java";
         String str1 = "java";
+        String str2 = new String("java Programming");
         System.out.println(str == str1); 
+        System.out.println(str1 == str2);
+        String str3 = new String("java");
+        System.out.println(str.equals(str3));
     }
     public static void main(String [] args) {
         javaString js = new javaString();
