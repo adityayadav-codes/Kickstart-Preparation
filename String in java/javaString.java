@@ -62,7 +62,8 @@ public class javaString {
         String a = "aadi";
         String b = "aadi";
         System.out.println(a == b);// true
-        
+          String c = new String("aadi"); // created in heap memory
+        System.out.println(a ==c);// false, because a is in string pool and c is in heap memory
     }
     public static void main(String [] args) {
         javaString js = new javaString();
