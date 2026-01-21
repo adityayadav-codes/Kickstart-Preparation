@@ -43,7 +43,7 @@ public class javaString {
 	System.out.println("Total Vowels "+count);
 }
 
-   void stringMethod() {
+   void stringUpperCaseMethod() {
 	String str = "java";
 	String rts = str.toUpperCase();
 		System.out.println(rts);
@@ -56,7 +56,7 @@ public static void main(String [] args) {
        // js.countConsonants();
        //js.reverseString();
       // js.countVowels();
-      js.stringMethod();
+      js.stringUpperCaseMethod();
     }
 
  }
