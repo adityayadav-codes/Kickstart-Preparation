@@ -68,10 +68,16 @@ public class javaString {
     }
     void containsMethod() {
         String str = "my life is java";
-        System.out.println(str.contains("java"));
-        System.out.println(str.contains("python"));
+        // System.out.println(str.contains("java"));
+        // System.out.println(str.contains("python"));
+        String input = "admin tera baap hai";
+        if(input.contains("baap hai")) {
+            System.out.println("Access Granted");
+        } else {
+             System.out.println("Access Denied");
+        }
     }
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         javaString js = new javaString();
        // js.countConsonants();
        //js.reverseString();
