@@ -72,10 +72,16 @@ public class javaString {
         // System.out.println(str.contains("python"));
         String input = "admin tera baap hai";
         if(input.contains("baap hai")) {
-            System.out.println("Access Granted");
+            // System.out.println("Access Granted");
         } else {
-             System.out.println("Access Denied");
+            //  System.out.println("Access Denied");
         }
+            String email = "example001@gmail.com";
+            if(email.contains("@gmail.com1")) {
+                System.out.println("Valid Gmail Address");
+            } else {
+                System.out.println("Invalid Gmail Address");
+            }
     }
     public static void main(String[] args) {
         javaString js = new javaString();
