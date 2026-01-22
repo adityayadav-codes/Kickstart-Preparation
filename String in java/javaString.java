@@ -143,6 +143,11 @@ public class javaString {
 	
 		System.out.println(count);
 }
+    void removeSpace() {
+        String str = "i love java programming";
+        String result = str.replace("","");
+        System.out.println(result);
+    }
     public static void main(String[] args) {
         javaString js = new javaString();
        // js.countConsonants();
@@ -161,6 +166,9 @@ public class javaString {
             // js.checkPalindrom1();
 
             // count words in sentences
-            js.countWords();
+            // js.countWords();
+            
+            //  remove space in sentences
+            js.removeSpace();
         }
  }
