@@ -67,6 +67,7 @@ public class javaString {
          System.out.println(a.equals(c));// true, because equals method compares the content of the string
     }
     void containsMethod() {
+
         String str = "my life is java";
         // System.out.println(str.contains("java"));
         // System.out.println(str.contains("python"));
@@ -83,6 +84,20 @@ public class javaString {
                 System.out.println("Invalid Gmail Address!!");
             }
     }
+    void vowelsReverseOrder() {
+       String str = "icecream";
+         String vowels = "";
+           for(int i =0; i< str.length(); i++) {
+            if(str.charAt(i ) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) == 'u') {
+                vowels = vowels + str.charAt(i);
+            }   
+            else {
+                continue;
+            }
+        }
+            System.out.println("Vowels in the string: " + vowels);
+        }
+
     public static void main(String[] args) {
         javaString js = new javaString();
        // js.countConsonants();
@@ -91,6 +106,7 @@ public class javaString {
     //   js.stringUpperCaseMethod();
         //  js.stringLowerCaseMethod();
           //js.equalsMethod();
-            js.containsMethod();
+            //js.containsMethod();
+            js.vowelsReverseOrder();
         }
  }
