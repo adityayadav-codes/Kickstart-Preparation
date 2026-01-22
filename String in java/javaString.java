@@ -126,7 +126,17 @@ public class javaString {
 		System.out.println("Not Palindrome");
 	}
 }    
-public static void main(String[] args) {
+    void checkPalindrom1 () {
+	System.out.println("Method 2 : ");
+		String str = "madam";
+		String reversed = new StringBuilder(str).reverse().toString();
+		if(str.equals(reversed)) {
+			System.out.println(" palidrome");
+		} else {
+			System.out.println("Not Plindrome");
+	}
+}
+    public static void main(String[] args) {
         javaString js = new javaString();
        // js.countConsonants();
        //js.reverseString();
@@ -140,7 +150,8 @@ public static void main(String[] args) {
             // js.compareString();
 
             // m -> A palindrome string is a string that reads the same forward and backward.
-            js.checkPalindrom();
+            // js.checkPalindrom();
+            js.checkPalindrom1();
 
         }
  }
