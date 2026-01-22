@@ -148,6 +148,17 @@ public class javaString {
         String result = str.replace("","");
         System.out.println(result);
     }
+    void removeSpace2() {
+        String str = "i love java programming";
+        String result = " ";
+
+        for(int i =0; i < str.length(); i++) {
+            if(str.charAt(i) != ' ') {
+                result = result + str.charAt(i)
+            }
+        }
+        System.out.println("result");
+    }
     public static void main(String[] args) {
         javaString js = new javaString();
        // js.countConsonants();
