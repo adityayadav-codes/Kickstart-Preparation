@@ -107,7 +107,26 @@ public class javaString {
 	String str2 = "java";
 		System.out.println(str1.equals(str2));
 }   
-    public static void main(String[] args) {
+    void checkPalindrom() {
+        System.out.println("Mehtod !:");
+	String str = "Nitin";
+	boolean  isPalindrome = true;
+		for(int i =0; i < str.length() / 2; i++) {
+			
+			if(str.charAt(i) != str.charAt(str.length()-1-i)){
+				
+				isPalindrome = false;
+				break;
+		}
+	}	
+	if(isPalindrome) {
+		
+		System.out.println("Palindrome");
+	} else {
+		System.out.println("Not Palindrome");
+	}
+}    
+public static void main(String[] args) {
         javaString js = new javaString();
        // js.countConsonants();
        //js.reverseString();
@@ -118,6 +137,10 @@ public class javaString {
             //js.containsMethod();
             // js.vowelsReverseOrder();
             // js.containsMethod2();
-            js.compareString();
+            // js.compareString();
+
+            // m -> A palindrome string is a string that reads the same forward and backward.
+            js.checkPalindrom();
+
         }
  }
