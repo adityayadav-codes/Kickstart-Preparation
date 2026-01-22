@@ -136,6 +136,13 @@ public class javaString {
             System.out.println("Not palindrome");
         }
 }
+    void countWords() {
+	String str = "I Love java Programming";
+    String[] words = str.trim().split("\\s+");
+	int count = words.length;
+	
+		System.out.println(count);
+}
     public static void main(String[] args) {
         javaString js = new javaString();
        // js.countConsonants();
@@ -151,7 +158,9 @@ public class javaString {
 
             // m -> A palindrome string is a string that reads the same forward and backward.
             // js.checkPalindrom();
-            js.checkPalindrom1();
+            // js.checkPalindrom1();
 
+            // count words in sentences
+            js.countWords();
         }
  }
