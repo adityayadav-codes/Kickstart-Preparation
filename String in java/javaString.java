@@ -128,13 +128,13 @@ public class javaString {
 }    
     void checkPalindrom1 () {
 	System.out.println("Method 2 : ");
-		String str = "madam";
-		String reversed = new StringBuilder(str).reverse().toString();
-		if(str.equals(reversed)) {
-			System.out.println(" palidrome");
-		} else {
-			System.out.println("Not Plindrome");
-	}
+		String str = "Nitin";
+        String reversed = new StringBuilder(str).reverse().toString();
+        if(str.equals(reversed)) {
+            System.out.println("Palindrome");
+        } else {
+            System.out.println("Not palindrome");
+        }
 }
     public static void main(String[] args) {
         javaString js = new javaString();
