@@ -97,13 +97,17 @@ public class javaString {
         }
             System.out.println("Vowels in the string: " + vowels);
         }
-
     void containsMethod2(){
         String str = "hello java";
         System.out.println(str.contains("kya haal hai"));
         
     }
-        public static void main(String[] args) {
+    void compareString() {
+	String str1 = "java";
+	String str2 = "java";
+		System.out.println(str1.equals(str2));
+}   
+    public static void main(String[] args) {
         javaString js = new javaString();
        // js.countConsonants();
        //js.reverseString();
@@ -113,6 +117,7 @@ public class javaString {
           //js.equalsMethod();
             //js.containsMethod();
             // js.vowelsReverseOrder();
-            js.containsMethod2();
+            // js.containsMethod2();
+            js.compareString();
         }
  }
