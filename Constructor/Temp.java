@@ -1,4 +1,6 @@
- public class Temp {
+package Constructor;
+
+public class Temp {
 	
 	int a ;
 	int b;
