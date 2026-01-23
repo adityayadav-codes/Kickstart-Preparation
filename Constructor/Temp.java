@@ -93,7 +93,7 @@ public class Temp {
 		this.age = age;
 		this.marks = marks;
 	}
-		Temp() { 
+	    void display() { 
 
 			System.out.println("Name :"+name);
 			System.out.println("Age.   :"+age);
@@ -102,6 +102,7 @@ public class Temp {
 	public static void main(String [] args) {
 		
 		Temp stu1 = new Temp("Aditya Yadav", 20, 72);
+        stu1.display();
 		
 	}
 } 
