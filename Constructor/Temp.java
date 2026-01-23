@@ -42,9 +42,9 @@ public class Temp {
 	int age;
 	
 		Temp(String name, int age) {
-		
-		name = name;
-		age = age;
+		// this keyword
+		this.name = name;
+		this.age = age;
 	}
 		void display() {
 		
