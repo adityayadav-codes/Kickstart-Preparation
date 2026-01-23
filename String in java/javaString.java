@@ -164,7 +164,7 @@ public class javaString {
         String result = " ";
         for( int i =0 ; i < str.length(); i++) {
             if(str.charAt(i) != ' ' ){
-                    result = result+str.charAt(i)
+                    result = result+str.charAt(i);
             }
         }
         System.out.println(result);
@@ -191,6 +191,7 @@ public class javaString {
             
             //  remove space in sentences
             // js.removeSpace();
-            js.removeSpace2();
+            // js.removeSpace2();
+            js.removeSpace3();
        }
  }
