@@ -59,25 +59,49 @@
 // 	}
 // }
 
-public class Temp {
+// public class Temp {
 	
+// 	String name;
+// 	int age;
+	
+// 		Temp(String name, int age) {
+//             Temp obj = this;
+// 			obj.name = name;
+// 			obj.age = age;
+// 	}
+		
+// 		void display() {
+		
+// 		System.out.println("Name : "+name);
+// 		System.out.println("Age    :"+age);
+// 	}
+// 	public static void main(String [] args) {
+		
+// 		Temp t1 = new Temp("Aditya", 20);
+//         t1.display();
+// 	}
+// }
+public class Temp {
+		
 	String name;
 	int age;
+	double marks;
 	
-		Temp(String name, int age) {
-            Temp obj = this;
-			obj.name = name;
-			obj.age = age;
-	}
+		Temp(String name, int age, double marks) {
 		
-		void display() {
-		
-		System.out.println("Name : "+name);
-		System.out.println("Age    :"+age);
+		this.name = name;
+		this.age = age;
+		this.marks = marks;
 	}
+		Temp() { 
+
+			System.out.println("Name :"+name);
+			System.out.println("Age.   :"+age);
+	}
+	
 	public static void main(String [] args) {
 		
-		Temp t1 = new Temp("Aditya", 20);
-        t1.display();
+		Temp stu1 = new Temp("Aditya Yadav", 20, 72);
+		
 	}
-}
+} 
