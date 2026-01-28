@@ -24,10 +24,18 @@ void dynamicIndexing() {
 		System.out.println(username);
 } 
     
+// Example 2:
+void fileExtensionExtract() {
+	String file = "resume.final.version.pdf";
+	int dot = file.lastIndexOf('.');
+	String extension  = file.substring(dot + 1);
+		System.out.println(extension);
+} 
 public static void main(String[] args) {
         temp t1 = new temp();
         // t1.countVowels();
         // t1.substring();
-        t1.dynamicIndexing();
+        // t1.dynamicIndexing();
+        t1.fileExtensionExtract();
     }
 }
