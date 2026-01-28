@@ -10,8 +10,24 @@ public class temp {
         }
         System.out.println("total vowels in string is : "+count);
     }
-    public static void main(String[] args) {
+    void substring() {
+	String str = "javaProgramming";
+	String atindex = str.substring(4);
+		System.out.println(atindex);
+}
+// Example 1:
+
+void dynamicIndexing() {
+	String email = "aditya.yadav@gmail.com";
+	int atIndex = email.indexOf('@');
+	String username = email.substring(0,atIndex);
+		System.out.println(username);
+} 
+    
+public static void main(String[] args) {
         temp t1 = new temp();
-        t1.countVowels();
+        // t1.countVowels();
+        // t1.substring();
+        t1.dynamicIndexing();
     }
 }
