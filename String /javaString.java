@@ -173,6 +173,11 @@ public class javaString {
         String str = "java";
         System.out.println("String length is "+str.length());
     }
+   void charAt() {
+    String str = "java";
+        System.out.println("charcter at index: "+str.charAt(0));
+   }
+
     public static void main(String[] args) {
         javaString js = new javaString();
        // js.countConsonants();
@@ -197,6 +202,7 @@ public class javaString {
             // js.removeSpace();
             // js.removeSpace2();
             // js.removeSpace3();
-            js.length();
-       }
+            // js.length(); 
+            js.charAt();
+   }
  }
