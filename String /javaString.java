@@ -180,8 +180,9 @@ public class javaString {
    void equals() {
     String str1 = "java";
    String str2 = "java";
-   String str3 = new String("hava");
-        System.out.println(str1 == str3);
+   String str3 = new String("java");
+        // System.out.println(str1 == str3);
+        System.out.println(str2.equals(str3));
    }
     public static void main(String[] args) {
         javaString js = new javaString();
