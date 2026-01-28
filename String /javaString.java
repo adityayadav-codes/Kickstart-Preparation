@@ -177,7 +177,12 @@ public class javaString {
     String str = "java";
         System.out.println("charcter at index: "+str.charAt(0));
    }
-
+   void equals() {
+    String str1 = "java";
+   String str2 = "java";
+   String str3 = new String("hava");
+        System.out.println(str1 == str3);
+   }
     public static void main(String[] args) {
         javaString js = new javaString();
        // js.countConsonants();
@@ -203,6 +208,7 @@ public class javaString {
             // js.removeSpace2();
             // js.removeSpace3();
             // js.length(); 
-            js.charAt();
+            // js.charAt();
+            js.equals();
    }
  }
