@@ -50,6 +50,15 @@ void  otpValidationLogic () {
 		
 		System.out.println(msg.substring(start,end));
 }
+void Programtoprintallsubstrings(){
+    String str = "JAVA";
+    String finalstr;
+        for(int i =0 ; i < str.length(); i++) {
+            finalstr = str.substring(i);
+              System.out.println(finalstr);
+        }
+      
+}
 public static void main(String[] args) {
         temp t1 = new temp();
         // t1.countVowels();
@@ -57,6 +66,7 @@ public static void main(String[] args) {
         // t1.dynamicIndexing();
         // t1.fileExtensionExtract();
         // t1.maskSensitivedata();
-        t1.otpValidationLogic();
+        // t1.otpValidationLogic();
+        t1.Programtoprintallsubstrings();
     }
 }
