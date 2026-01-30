@@ -59,6 +59,12 @@ void Programtoprintallsubstrings(){
         }
       
 }
+void mymethod() {
+    String str = " this is your otp 345454";
+    int start = str.indexOf("otp")+4;
+    int end = start + 6;
+    System.out.println(str.substring(start, end));
+}
 public static void main(String[] args) {
         temp t1 = new temp();
         // t1.countVowels();
@@ -67,6 +73,7 @@ public static void main(String[] args) {
         // t1.fileExtensionExtract();
         // t1.maskSensitivedata();
         // t1.otpValidationLogic();
-        t1.Programtoprintallsubstrings();
+        // t1.Programtoprintallsubstrings();
+        t1.mymethod();
     }
 }
