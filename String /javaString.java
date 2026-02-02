@@ -217,6 +217,7 @@ public class javaString {
             // js.removeSpace3();
             // js.length(); 
             // js.charAt();
-            js.equals();
+            // js.equals();
+            js.reversestring2();
    }
  }
