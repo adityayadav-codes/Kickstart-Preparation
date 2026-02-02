@@ -186,7 +186,7 @@ public class javaString {
    }
    void reversestring2() {
 
-        
+        String str = "hii aadi";
    }
    public static void main(String[] args) {
         javaString js = new javaString();
