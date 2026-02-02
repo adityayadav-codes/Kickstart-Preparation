@@ -184,7 +184,11 @@ public class javaString {
         // System.out.println(str1 == str3);
         System.out.println(str2.equals(str3));
    }
-    public static void main(String[] args) {
+   void reversestring2() {
+
+        
+   }
+   public static void main(String[] args) {
         javaString js = new javaString();
        // js.countConsonants();
        //js.reverseString();
