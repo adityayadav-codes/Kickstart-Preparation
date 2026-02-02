@@ -170,27 +170,32 @@ public class javaString {
         System.out.println(result);
     }
     void length() {
+            String str = "java";
+            System.out.println("String length is "+str.length());
+        }
+    void charAt() {
         String str = "java";
-        System.out.println("String length is "+str.length());
+            System.out.println("charcter at index: "+str.charAt(0));
     }
-   void charAt() {
-    String str = "java";
-        System.out.println("charcter at index: "+str.charAt(0));
-   }
-   void equals() {
-    String str1 = "java";
-   String str2 = "java";
-   String str3 = new String("java");
-        // System.out.println(str1 == str3);
-        System.out.println(str2.equals(str3));
-   }
-   void reversestring2() {
+    void equals() {
+        String str1 = "java";
+    String str2 = "java";
+    String str3 = new String("java");
+            // System.out.println(str1 == str3);
+            System.out.println(str2.equals(str3));
+    }
+    void reversestring2() {
 
         String str = "hii aadi";
         for(int i = str.length()-1; i >= 0; i--) {
             System.out.print(str.charAt(i));
         }
    }
+    void CountWordsInSentence() {
+        String str = "java";
+
+            System.out.println(str.length());
+    }
    public static void main(String[] args) {
         javaString js = new javaString();
        // js.countConsonants();
@@ -218,6 +223,7 @@ public class javaString {
             // js.length(); 
             // js.charAt();
             // js.equals();
-            js.reversestring2();
+            // js.reversestring2();
+            js.CountWordsInSentence();
    }
  }
