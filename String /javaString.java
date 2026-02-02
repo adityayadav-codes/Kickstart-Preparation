@@ -187,8 +187,8 @@ public class javaString {
    void reversestring2() {
 
         String str = "hii aadi";
-        for(int i = str.length()-1; i > 0; i--) {
-            System.out.println(str.charAt(i));
+        for(int i = str.length()-1; i >= 0; i--) {
+            System.out.print(str.charAt(i));
         }
    }
    public static void main(String[] args) {
