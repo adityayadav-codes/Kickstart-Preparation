@@ -24,72 +24,72 @@
 
 
 // ========== Real-life Example for Encapsulation & Data Hiding ===========================
-// class BankAccount {
+class BankAccount {
 	
-// 	private double balance;
+	private double balance;
 	
-// 		public void deposit(double amount) {
+		public void deposit(double amount) {
 		
-// 			if(amount >0) {
+			if(amount >0) {
 			
-// 				balance += amount;
-// 		}
-// 	}
+				balance += amount;
+		}
+	}
 	
-// 		public void withdraw(double amount) {
+		public void withdraw(double amount) {
 		
-// 			if(amount >0 && amount <= balance) {
+			if(amount >0 && amount <= balance) {
 		
-// 				balance -= amount;
-// 		}
-// 	}
+				balance -= amount;
+		}
+	}
 		
-// 		public double getBalance() {
+		public double getBalance() {
 			
-// 			return balance;
-// 	}
-// } 
+			return balance;
+	}
+} 
 	
-// public class Main {
+public class Main {
 	
-// 	public static void main(String [] args) {	
+	public static void main(String [] args) {	
 
-// 	    BankAccount acc = new BankAccount();
-// 	    acc.deposit(5000);
-//     	acc.withdraw(1000);
+	    BankAccount acc = new BankAccount();
+	    acc.deposit(5000);
+    	acc.withdraw(1000);
 	
-// 	    System.out.println("Balance : "+acc.getBalance());
-// 	}
-// }
+	    System.out.println("Balance : "+acc.getBalance());
+	}
+}
 
 
 // ==================== Palindrome Number ========================================
 
-import java.util.Scanner;
- class Main {
+// import java.util.Scanner;
+//  class Main {
 	
-	public static void main(String [] args) {
+// 	public static void main(String [] args) {
 		
-		Scanner sc = new Scanner(System.in);	
-		System.out.println("Enter the digit for check Palindrome ");
+// 		Scanner sc = new Scanner(System.in);	
+// 		System.out.println("Enter the digit for check Palindrome ");
 		
-		int num = sc.nextInt();
-		int original = num;
-		int reverse = 0;
+// 		int num = sc.nextInt();
+// 		int original = num;
+// 		int reverse = 0;
 		
-		while(num > 0) {
+// 		while(num > 0) {
 			
-			int digit = num % 10;
-			reverse = reverse * 10 + digit;
-			num = num / 10;
-		}
+// 			int digit = num % 10;
+// 			reverse = reverse * 10 + digit;
+// 			num = num / 10;
+// 		}
 
-		if(original == reverse) {
+// 		if(original == reverse) {
 				
-			System.out.println("Palindrome Number : "+reverse);
-		} else {
+// 			System.out.println("Palindrome Number : "+reverse);
+// 		} else {
 		
-			System.out.println("Not Palindrome");
-		}
-	}
-}
+// 			System.out.println("Not Palindrome");
+// 		}
+// 	}
+// }
