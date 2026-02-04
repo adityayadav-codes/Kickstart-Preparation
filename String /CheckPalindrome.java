@@ -8,6 +8,11 @@ public  class CheckPalindrome {
 
             rev = rev + str.charAt(i);
         }
-    
+        if(str.equals(rev)) {
+
+            System.out.println("Palindrome");
+        }  else {
+            System.out.println("Not Palindrome");
+        }
     }
 }
