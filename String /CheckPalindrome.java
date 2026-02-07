@@ -1,17 +1,14 @@
-public  class CheckPalindrome {
+public class CheckPalindrome {
     public static void main(String[] args) {
-        
         String str = "radar";
         String rev = "";
-
-        for(int i = str.length()-1; i >= 0; i--) {
+        for(int i = str.length()-1; i >= 0 ; i--) {
 
             rev = rev + str.charAt(i);
         }
         if(str.equals(rev)) {
-
             System.out.println("Palindrome");
-        }  else {
+        } else {
             System.out.println("Not Palindrome");
         }
     }
