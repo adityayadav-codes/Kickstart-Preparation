@@ -136,29 +136,29 @@ public class javaString {
             System.out.println("Not palindrome");
         }
 }
-//     void countWords() {
-// 	String str = "I Love java Programming";
-//     String[] words = str.trim().split("\\s+");
-// 	int count = words.length;
+    void countWords() {
+	String str = "I Love java Programming";
+    String[] words = str.trim().split("\\s+");
+	int count = words.length;
 	
-// 		System.out.println(count);
-// }
-//     void removeSpace() {
-//         String str = "i love java programming";
-//         String result = str.replace("","");
-//         System.out.println(result);
-//     }
-//     void removeSpace2() {
-//         String str = "i love java programming";
-//         String result = " ";
+		System.out.println(count);
+}
+    void removeSpace() {
+        String str = "i love java programming";
+        String result = str.replace("","");
+        System.out.println(result);
+    }
+    void removeSpace2() {
+        String str = "i love java programming";
+        String result = " ";
 
-//         for(int i =0; i < str.length(); i++) {
-//             if(str.charAt(i) != ' ') {
-//                 result = result + str.charAt(i);
-//             }
-//         }
-//         System.out.println(result);
-//     }
+        for(int i =0; i < str.length(); i++) {
+            if(str.charAt(i) != ' ') {
+                result = result + str.charAt(i);
+            }
+        }
+        System.out.println(result);
+    }
     void removeSpace3 (){
         String str = "hii golu";
         String result = " ";
@@ -195,8 +195,8 @@ public class javaString {
         String str = "java";
 
             System.out.println(str.length());
-    }
-   public static void main(String[] args) {
+    } 
+    public static void main(String[] args) {
         javaString js = new javaString();
        // js.countConsonants();
        //js.reverseString();
