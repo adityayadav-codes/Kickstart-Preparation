@@ -1,23 +1,29 @@
 // Inheritance in java
-class Parent {
+// class Parent {
 
-    void showParent() {
+//     void showParent() {
 
-        System.out.println("show from Parent Class");
-    }
-}
-class Child extends Parent {
+//         System.out.println("show from Parent Class");
+//     }
+// }
+// class Child extends Parent {
 
-    void showChild() {
-        System.out.println("show from child class");
-    }
-}
+//     void showChild() {
+//         System.out.println("show from child class");
+//     }
+// }
 
-public class Main {
-    public static void main(String [] args) {
+// public class Main {
+//     public static void main(String [] args) {
 
-        Child c1 = new Child();
-        c1.showParent();
-        c1.showChild();
-    }
+//         Child c1 = new Child();
+//         c1.showParent();
+//         c1.showChild();
+//     }
+// }
+
+// Extends Keyword:-
+
+class Vehicle {
+    
 }
