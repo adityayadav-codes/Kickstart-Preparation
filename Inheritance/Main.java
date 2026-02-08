@@ -25,5 +25,12 @@
 // Extends Keyword:-
 
 class Vehicle {
+    String VehicleName;
+    double speed;
+    String model;
+    double price;
+    String color;
+    String varient;
+    
     
 }
