@@ -34,5 +34,6 @@ class Vehicle {
     
         void show() {
             System.out.println("Vehicle name");
+            System.out.println("Speed ");
         }
 }
