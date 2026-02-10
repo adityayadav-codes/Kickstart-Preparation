@@ -33,7 +33,7 @@ class Vehicle {
     String varient;
     
         void show() {
-            System.out.println("Vehicle name");
+            System.out.println("Vehicle name "+VehicleName);
             System.out.println("Speed ");
         }
 }
