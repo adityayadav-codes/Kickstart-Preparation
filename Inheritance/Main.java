@@ -31,9 +31,21 @@ class Vehicle {
     double price;
     String color;
     String varient;
+
+    // constructor
+        Vehicle(String VehicleName, double speed, String model, double price, String color, String varient){     
+            
+            this.VehicleName = VehicleName;
+            this.speed = speed;
+            this.model = model;
+            this.price = price;
+            this.color = color;
+            this.varient = varient;
+        }
     
         void show() {
             System.out.println("Vehicle name "+VehicleName);
-            System.out.println("Speed ");
+            System.out.println("Speed "+speed);
+            System.out.println("model : "+model);
         }
 }
