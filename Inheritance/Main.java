@@ -48,6 +48,7 @@ class Vehicle {
             System.out.println("Speed        :"+speed);
             System.out.println("model        : "+model);
             System.out.println("Price        : "+price);
-            
+            System.out.println("Color        : "+color);
+            System.out.println("Varient      : "+varient);
         }
 }
