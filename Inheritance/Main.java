@@ -44,8 +44,10 @@ class Vehicle {
         }
     
         void show() {
-            System.out.println("Vehicle name "+VehicleName);
-            System.out.println("Speed "+speed);
-            System.out.println("model : "+model);
+            System.out.println("Vehicle name :"+VehicleName);
+            System.out.println("Speed        :"+speed);
+            System.out.println("model        : "+model);
+            System.out.println("Price        : "+price);
+            
         }
 }
