@@ -32,5 +32,7 @@ class Vehicle {
     String color;
     String varient;
     
-    
+        void show() {
+            
+        }
 }
