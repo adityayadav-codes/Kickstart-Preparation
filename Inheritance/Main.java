@@ -24,7 +24,7 @@
 
 // Extends Keyword:-
 
-class ToyotoVehicle {
+class Vehicle {
     String VehicleName;
     double speed;
     String model;
@@ -33,8 +33,9 @@ class ToyotoVehicle {
     String varient;
 
     // constructor
-        ToyotoVehicle(String VehicleName, double speed, String model, double price, String color, String varient){     
+         void fun(String VehicleName, double speed, String model, double price, String color, String varient){     
             
+            System.out.println("Toyoto");
             this.VehicleName = VehicleName;
             this.speed = speed;
             this.model = model;
@@ -52,6 +53,6 @@ class ToyotoVehicle {
             System.out.println("Varient      : "+varient);
         }
 }
-class MarutiSuzukiVehicle {
+class MarutiSuzukiVehicle extends Vehicle {
     
 }
