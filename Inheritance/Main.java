@@ -50,7 +50,7 @@ class Vehicle {
             System.out.println("model        : "+model);
             System.out.println("Price        : "+price);
             System.out.println("Color        : "+color);
-            System.out.println("Varient      : "+varient);
+           
         }
 }
 class MarutiSuzukiVehicle extends Vehicle {
