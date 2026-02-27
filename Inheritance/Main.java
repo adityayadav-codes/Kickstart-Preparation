@@ -35,7 +35,6 @@ class Vehicle {
     // constructor
          void fun(String VehicleName, double speed, String model, double price, String color, String varient){     
             
-            System.out.println("Toyoto");
             this.VehicleName = VehicleName;
             this.speed = speed;
             this.model = model;
@@ -54,5 +53,6 @@ class Vehicle {
         }
 }
 class MarutiSuzukiVehicle extends Vehicle {
+
     
 }
