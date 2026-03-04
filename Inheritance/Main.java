@@ -30,7 +30,7 @@ class Vehicle {
     String model;
     double price;
     String color;
-    String varient;
+   
 
     // constructor
          void fun(String VehicleName, double speed, String model, double price, String color, String varient){     
