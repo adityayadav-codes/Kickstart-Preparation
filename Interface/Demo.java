@@ -39,35 +39,77 @@
 //     }
 // }
 
-// 2. Payment via interface
+// 2. Payment via interface===========================================
 
-interface Payment {
+// interface Payment {
 
-    void pay(double amount);
+//     void pay(double amount);
+// }
+// class UPI implements Payment {
+
+//     public void pay(double amount) {
+
+//         System.out.println("Payment via UPI : "+amount);
+//     }
+// }
+// class CreditCard implements Payment {
+
+//     public void pay(double amount) {
+
+//         System.out.println("Payment via Credit Card : "+amount);
+//     }
+// }
+// public class Demo {
+
+//     public static void main(String [] args) {
+
+//         Payment obj;
+//         obj = new UPI();
+//         obj.pay(5000);
+
+//         obj = new CreditCard();
+//         obj.pay(10000);
+//     }
+// }
+
+// 2. Remote Control System============================================
+
+interface Remote {
+
+    void powerOn();
+    void powerOff();
 }
-class UPI implements Payment {
+class Tv implements Remote {
 
-    public void pay(double amount) {
+    public void powerOn() {
+        System.out.println("TV turned ON");
+    }
+    public void powerOff() {
 
-        System.out.println("Payment via UPI : "+amount);
+        System.out.println("TV turned OFF");
     }
 }
-class CreditCard implements Payment {
+class Ac implements Remote {
 
-    public void pay(double amount) {
+    public void powerOn() {
 
-        System.out.println("Payment via Credit Card : "+amount);
+        System.out.println("AC turned on");
+    } 
+    public void powerOff() {
+
+        System.out.println("AC turned OFF");
     }
 }
 public class Demo {
+    public static void main(String[] args) {
+        
+        Remote obj;
+        obj = new Tv();
+        obj.powerOn();
+        obj.powerOff();
 
-    public static void main(String [] args) {
-
-        Payment obj;
-        obj = new UPI();
-        obj.pay(5000);
-
-        obj = new CreditCard();
-        obj.pay(10000);
+        obj = new Ac();
+        obj.powerOn();
+        obj.powerOff();
     }
 }
