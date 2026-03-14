@@ -7,33 +7,67 @@
 
 // Implement pay() differently.
 
+
+// interface Payment {
+
+//     void pay();
+// }
+// class UPI implements Payment {
+
+//     public void pay() {
+
+//         System.out.println("Payment via UPI");
+//     }
+// }
+// class CreditCard implements Payment {
+
+//     public void pay() {
+
+//         System.out.println("Payment via Cedit Card");
+//     }
+// }
+// // main class
+// public class Demo {
+
+//     public static void main(String [] args) {
+
+//         Payment obj;
+//         obj = new UPI();
+//         obj.pay();
+//         obj = new CreditCard();
+//         obj.pay();
+//     }
+// }
+
+// 2. Payment via interface
+
 interface Payment {
 
-    void pay();
+    void pay(double amount);
 }
 class UPI implements Payment {
 
-    public void pay() {
+    public void pay(double amount) {
 
-        System.out.println("Payment via UPI");
+        System.out.println("Payment via UPI : "+amount);
     }
 }
 class CreditCard implements Payment {
 
-    public void pay() {
+    public void pay(double amount) {
 
-        System.out.println("Payment via Cedit Card");
+        System.out.println("Payment via Credit Card : "+amount);
     }
 }
-// main class
 public class Demo {
 
     public static void main(String [] args) {
 
         Payment obj;
         obj = new UPI();
-        obj.pay();
+        obj.pay(5000);
+
         obj = new CreditCard();
-        obj.pay();
+        obj.pay(10000);
     }
 }
