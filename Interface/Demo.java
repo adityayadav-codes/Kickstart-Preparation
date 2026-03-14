@@ -8,69 +8,69 @@
 // Implement pay() differently.
 
 
-// interface Payment {
+interface Payment {
 
-//     void pay();
-// }
-// class UPI implements Payment {
+    void pay();
+}
+class UPI implements Payment {
 
-//     public void pay() {
+    public void pay() {
 
-//         System.out.println("Payment via UPI");
-//     }
-// }
-// class CreditCard implements Payment {
+        System.out.println("Payment via UPI");
+    }
+}
+class CreditCard implements Payment {
 
-//     public void pay() {
+    public void pay() {
 
-//         System.out.println("Payment via Cedit Card");
-//     }
-// }
-// // main class
-// public class Demo {
+        System.out.println("Payment via Cedit Card");
+    }
+}
+// main class
+public class Demo {
 
-//     public static void main(String [] args) {
+    public static void main(String [] args) {
 
-//         Payment obj;
-//         obj = new UPI();
-//         obj.pay();
-//         obj = new CreditCard();
-//         obj.pay();
-//     }
-// }
+        Payment obj;
+        obj = new UPI();
+        obj.pay();
+        obj = new CreditCard();
+        obj.pay();
+    }
+}
 
 // 2. Payment via interface===========================================
 
-// interface Payment {
+interface Payment {
 
-//     void pay(double amount);
-// }
-// class UPI implements Payment {
+    void pay(double amount);
+}
+class UPI implements Payment {
 
-//     public void pay(double amount) {
+    public void pay(double amount) {
 
-//         System.out.println("Payment via UPI : "+amount);
-//     }
-// }
-// class CreditCard implements Payment {
+        System.out.println("Payment via UPI : "+amount);
+    }
+}
+class CreditCard implements Payment {
 
-//     public void pay(double amount) {
+    public void pay(double amount) {
 
-//         System.out.println("Payment via Credit Card : "+amount);
-//     }
-// }
-// public class Demo {
+        System.out.println("Payment via Credit Card : "+amount);
+    }
+}
+public class Demo {
 
-//     public static void main(String [] args) {
+    public static void main(String [] args) {
 
-//         Payment obj;
-//         obj = new UPI();
-//         obj.pay(5000);
+        Payment obj;
+        obj = new UPI();
+        obj.pay(5000);
 
-//         obj = new CreditCard();
-//         obj.pay(10000);
-//     }
-// }
+        obj = new CreditCard();
+        obj.pay(10000);
+    }
+}
 
 // 2. Remote Control System============================================
 
@@ -111,5 +111,37 @@ public class Demo {
         obj = new Ac();
         obj.powerOn();
         obj.powerOff();
+    }
+}
+
+// 3. Animal Sound via Interfaces
+
+interface Animal {
+
+    void sound();
+}
+class Dog implements Animal {
+
+    public void sound() {
+
+        System.out.println("Dog Barks!!");
+    } 
+}
+class Cat implements Animal {
+
+    public void sound() {
+        Dog d = new Dog();
+        d.sound();
+        System.out.println("Cat meos");
+        
+    }
+}
+public class Demo {
+
+    public static void main(String[] args) {
+         
+        Cat obj = new Cat();
+        obj.sound();
+       
     }
 }
