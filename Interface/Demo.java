@@ -138,10 +138,11 @@ class Cat implements Animal {
 }
 public class Demo {
 
-    public static void main(String[] args) {
-         
-        Cat obj = new Cat();
-        obj.sound();
-       
+    public static void main(String [] args) {
+
+        Cat c = new Cat();
+        c.sound();
     }
+
+    
 }
