@@ -16,6 +16,7 @@ public class ArrList {
 
         ArrayList<String> list = new ArrayList<>();
 
+        // add()=================================
         list.add("Brijnath Yadav");
         list.add("Vidya Devi"); 
         list.add("Suman Yadav");
@@ -23,11 +24,16 @@ public class ArrList {
         list.add("Golu Yadav");
         list.add("Babu Yadav");
 
+        // get()=================================
             System.out.println(list.get(0));
             System.out.println(list.get(1));
             System.out.println(list.get(2));
             System.out.println(list.get(3));
             System.out.println(list.get(4));
-            System.out.println(list.get(5));            
+            System.out.println(list.get(5)); 
+
+        // remove ==================================
+        list.remove(2);
+        System.out.println(list);     
     }
 }
