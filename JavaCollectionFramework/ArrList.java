@@ -1,3 +1,4 @@
+import java.util.*;
 /*
 
 Create an ArrayList of student names:
@@ -7,7 +8,7 @@ Create an ArrayList of student names:
 	•	Print updated list
 
 */
-import java.util.*;
+
 
 public class ArrList {
 
@@ -21,5 +22,12 @@ public class ArrList {
         list.add("Soni Yadav");
         list.add("Golu Yadav");
         list.add("Babu Yadav");
+
+            System.out.println(list.get(0));
+            System.out.println(list.get(1));
+            System.out.println(list.get(2));
+            System.out.println(list.get(3));
+            System.out.println(list.get(4));
+            System.out.println(list.get(5));            
     }
 }
