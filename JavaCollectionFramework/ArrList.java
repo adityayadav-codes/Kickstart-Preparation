@@ -17,12 +17,13 @@ public class ArrList {
         ArrayList<String> list = new ArrayList<>();
 
         // add()=================================
-        list.add("Brijnath Yadav");
-        list.add("Vidya Devi"); 
-        list.add("Suman Yadav");
-        list.add("Soni Yadav");
-        list.add("Golu Yadav");
-        list.add("Babu Yadav");
+        list.add("Aditya Yadav");
+        list.add("Akash Yadav"); 
+        list.add("Anil Singh");
+        list.add("Chandan Thakur");
+        list.add("Abhishek Yadav");
+        list.add("Daksh Chauhan");
+        list.add("Deepak Kumar");
 
         // get()=================================
             System.out.println(list.get(0));
@@ -35,5 +36,8 @@ public class ArrList {
         // remove ==================================
         list.remove(2);
         System.out.println(list);     
+
+    // size () =========================================
+    System.out.println(list.size());
     }
 }
