@@ -43,23 +43,76 @@ Create an ArrayList of student names:
 // }
 
 // 1️⃣ Create ArrayList of integers
-	// •	Add elements
-	// •	Print using loop
+// 	•	Add elements
+// 	•	Print using loop
+
+// public class ArrList {
+
+//     public static void main(String [] args) {
+
+//         ArrayList <Integer> list = new ArrayList<>();
+
+//         list.add(10);
+//         list.add(20);
+//         list.add(30);
+
+//         // loop
+//         for(int i =0; i < list.size(); i++) {
+
+//             System.out.println(list.get(i));
+//         }
+//     }
+// }
+
+/*
+    2️⃣ Create LinkedList
+	•	Add elements
+	•	Insert element at specific position
+
+// */
+// public class ArrList {
+
+//     public static void main(String [] args) {
+
+//         List <Integer> list = new LinkedList<>();
+
+//        try {
+
+//         list .add(10);
+//         list.add(20);
+//         list.add(40);
+
+//         list.add(2, 30);
+//         System.out.print("Insert element at specific index via LinkedList : ");
+//         System.out.println(list.get(2));
+
+//         for(int i : list) {
+
+//             System.out.println(i);
+//         }
+//     }
+//         catch(IndexOutOfBoundsException ioe) {
+
+//             System.out.println("You Cross the limit of Array⚠️");
+//         } 
+//     }    
+// }
+
+// Removes Duplicates From Array 
 
 public class ArrList {
+	
+	public static void main(String [] args) {
 
-    public static void main(String [] args) {
+		int [] arr = {1,2,3,2,4,1};
 
-        ArrayList <Integer> list = new ArrayList<>();
+		HashSet <Integer> set = new HashSet<>();
 
-        list.add(10);
-        list.add(20);
-        list.add(30);
+		for(int i : arr) {
 
-        // loop
-        for(int i =0; i < list.size(); i++) {
+			set.add(i);
+		}
 
-            System.out.println(list.get(i));
-        }
-    }
+		System.out.println(set);
+	}
 }
