@@ -28,33 +28,50 @@
     Prime number
 */
 
+// public class Rev {
+
+//     /**
+//      * @param args
+//      */
+//     public static void main(String [] args) {
+
+//         int num = 10;
+//         boolean isPrime = true;
+
+//         if(num <= 1) {
+
+//             isPrime = false;
+//         } 
+
+//         for(int i=2; i < num; i++ ) {
+//             if(num % i == 0) {
+//                 isPrime = false;
+//                 break;
+//             }
+//         }  
+//         if(isPrime) {
+//             System.out.println("Prime Number");
+//         }     
+//         if(!isPrime) {
+
+//             System.out.println("Not Prime Number");
+//         }
+//     }
+// }
+
+/*
+    Sum of digits
+*/
+
 public class Rev {
 
-    /**
-     * @param args
-     */
     public static void main(String [] args) {
 
-        int num = 10;
-        boolean isPrime = true;
+        int a = 10;
+        int b  = 20;
 
-        if(num <= 1) {
+        int sum = a + b;
 
-            isPrime = false;
-        } 
-
-        for(int i=2; i < num; i++ ) {
-            if(num % i == 0) {
-                isPrime = false;
-                break;
-            }
-        }  
-        if(isPrime) {
-            System.out.println("Prime Number");
-        }     
-        if(!isPrime) {
-
-            System.out.println("Not Prime Number");
-        }
+        System.out.println("sum. of digit is : "+sum);
     }
 }
