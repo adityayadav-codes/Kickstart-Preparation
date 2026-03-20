@@ -39,7 +39,7 @@ public class Demo {
     }
 }
 
-// 2. Payment via interface===========================================
+// 1. Payment via interface===========================================
 
 interface Payment {
 
