@@ -63,15 +63,37 @@
     Sum of digits
 */
 
+// public class Rev {
+
+//     public static void main(String [] args) {
+
+//         int a = 10;
+//         int b  = 20;
+
+//         int sum = a + b;
+
+//         System.out.println("sum. of digit is : "+sum);
+//     }
+// }
+
+/*
+
+    Array traversal========== Using for loop**********************
+*/  
 public class Rev {
 
-    public static void main(String [] args) {
+    public static void main(String [] aadi) {
 
-        int a = 10;
-        int b  = 20;
+        try {
+            int []arr = {10,20,30,40,50};
 
-        int sum = a + b;
+            for(int i = 0; i < arr.length; i++) {
 
-        System.out.println("sum. of digit is : "+sum);
+                System.out.print(arr[i]+ " ");
+            }
+        } catch(ArrayIndexOutOfBoundsException aioe) {
+
+            System.out.println("You cross array limit");
+        }
     }
 }
