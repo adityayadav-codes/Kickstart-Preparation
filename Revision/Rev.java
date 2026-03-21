@@ -102,27 +102,48 @@
     Maz/Min=================
 */
 
+// public class Rev {
+
+//     public static void main(String [] args) {
+
+//         int [] arr = {10,5,8,20,40,60,30,90,80};
+//         int max = arr[0];
+//         int min = arr[0];
+
+//         for(int i = 1; i < arr.length; i++) {
+
+//             if(arr[i] > max) {
+
+//                 max = arr[i];
+//             }
+
+//             if(arr[i] < min) {
+
+//                 min = arr[i];
+//             }
+//         }
+//     System.out.println("Maximum = "+max);
+//     System.out.println("Minimum = "+min);
+//     }
+// }
+
+/*
+    sum of digit======================================
+*/
+
 public class Rev {
 
-    public static void main(String [] args) {
+    public static void main(String[] args) {
+        
+        int num = 1234;
+        int sum = 0;
 
-        int [] arr = {10,5,8,20,40,60,30,90,80};
-        int max = arr[0];
-        int min = arr[0];
+        while(num > 0) {
 
-        for(int i = 1; i < arr.length; i++) {
-
-            if(arr[i] > max) {
-
-                max = arr[i];
-            }
-
-            if(arr[i] < min) {
-
-                min = arr[i];
-            }
+            int digit = num % 10;
+            sum +=digit;
+            num /=10;
         }
-    System.out.println("Maximum = "+max);
-    System.out.println("Minimum = "+min);
+    System.out.println("sum of digit : "+sum);
     }
 }
