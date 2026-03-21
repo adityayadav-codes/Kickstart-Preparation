@@ -80,20 +80,49 @@
 
     Array traversal========== Using for loop**********************
 */  
+// public class Rev {
+
+//     public static void main(String [] aadi) {
+
+//         try {
+//             int []arr = {10,20,30,40,50};
+
+//             for(int i = 0; i < arr.length; i++) {
+
+//                 System.out.print(arr[i]+ " ");
+//             }
+//         } catch(ArrayIndexOutOfBoundsException aioe) {
+
+//             System.out.println("You cross array limit");
+//         }
+//     }
+// }
+
+/*
+    Maz/Min=================
+*/
+
 public class Rev {
 
-    public static void main(String [] aadi) {
+    public static void main(String [] args) {
 
-        try {
-            int []arr = {10,20,30,40,50};
+        int [] arr = {10,5,8,20,40,60,30,90,80};
+        int max = arr[0];
+        int min = arr[0];
 
-            for(int i = 0; i < arr.length; i++) {
+        for(int i = 1; i < arr.length; i++) {
 
-                System.out.print(arr[i]+ " ");
+            if(arr[i] > max) {
+
+                max = arr[i];
             }
-        } catch(ArrayIndexOutOfBoundsException aioe) {
 
-            System.out.println("You cross array limit");
+            if(arr[i] < min) {
+
+                min = arr[i];
+            }
         }
+    System.out.println("Maximum = "+max);
+    System.out.println("Minimum = "+min);
     }
 }
