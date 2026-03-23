@@ -156,7 +156,7 @@ public class Rev {
 
     public static void main(String [] args) {
 
-        String str = "aditya123@gmail.com";
+        String str = "aditya@gmail.com";
         int atIndex = str.indexOf("@");
 
         String userName = str.substring(0, atIndex);
