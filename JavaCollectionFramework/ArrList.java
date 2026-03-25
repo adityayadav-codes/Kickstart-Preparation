@@ -70,32 +70,31 @@ Create an ArrayList of student names:
 	•	Insert element at specific position
 
 // */
-// public class ArrList {
+public class ArrList {
 
-//     public static void main(String [] args) {
+    public static void main(String [] args) {
 
-//         List <Integer> list = new LinkedList<>();
+        List <Integer> list = new LinkedList<>();
 
-//        try {
+       try {
 
-//         list .add(10);
-//         list.add(20);
-//         list.add(40);
+        list .add(10);
+        list.add(20);
+        list.add(40);
 
-//         list.add(2, 30);
-//         System.out.print("Insert element at specific index via LinkedList : ");
-//         System.out.println(list.get(2));
+        list.add(2, 30);
+        System.out.print("Insert element at specific index via LinkedList : ");
+        System.out.println(list.get(2));
 
-//         for(int i : list) {
+        for(int i : list) {
 
-//             System.out.println(i);
-//         }
-//     }
-//         catch(IndexOutOfBoundsException ioe) {
+            System.out.println(i);
+        }
+    }
+        catch(IndexOutOfBoundsException ioe) {
 
-//             System.out.println("You Cross the limit of Array⚠️");
-//         } 
-//     }    
-// }
+            System.out.println("You Cross the limit of Array⚠️");
+        } 
+    }    
+}
 
-/
