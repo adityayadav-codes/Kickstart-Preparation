@@ -152,15 +152,42 @@
 
     string======================
 */
+// public class Rev {
+
+//     public static void main(String [] args) {
+
+//         String str = "aditya@gmail.com";
+//         int atIndex = str.indexOf("@");
+
+//         String userName = str.substring(0, atIndex);
+
+//         System.out.println("Username : "+userName);
+//     }
+// }
+
+/*
+    count vowels -----------------------------
+*/
+
+import java.util.Scanner;
+
 public class Rev {
 
     public static void main(String [] args) {
+        Scanner sc = new Scanner(System.in);
+       
+        System.out.print("Enter a String : ");
+        String str = sc.nextLine();
+        int count=0;
+        for(int i =0; i < str.length(); i++) {
 
-        String str = "aditya@gmail.com";
-        int atIndex = str.indexOf("@");
+            if(str.charAt(i)== 'a' || str.charAt(i) == 'e' || str.charAt(i)=='i'|| str.charAt(i)=='o'|| str.charAt(i)=='u') {
 
-        String userName = str.substring(0, atIndex);
+                count++;
+            }
+        }
 
-        System.out.println("Username : "+userName);
+        System.out.println(count);
+
     }
 }
