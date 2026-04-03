@@ -2,12 +2,13 @@
     Linear Searching---------------------------
 */
 
-// import java.util.Scanner;
+import java.util.Scanner;
 
 public class LinBinSearching {
 
    static void linearSearch(int arr[], int key) {
 
+        System.out.println("Linear Searching through static method");
         boolean isFound = false;
 
         for(int i = 0; i < arr.length; i++) {
@@ -26,8 +27,17 @@ public class LinBinSearching {
     }
     public static void main(String[] args) {
         
-        int array[] = {10,20,30,50,70,60};
-        int target = 30;
-        linearSearch(array,target);
+        int array[] = new int[10];
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the elements");
+
+        for(int i = 0; i < array.length; i++) {
+
+            array[i] = sc.nextInt();
+        }
+    System.out.print("Enter target element ");
+    int target = sc.nextInt();
+
+    linearSearch(array, target);
 }
 }
