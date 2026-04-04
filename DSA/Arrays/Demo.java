@@ -19,8 +19,33 @@ public class Demo{
     for(int num : arr) System.out.print(num + " ");
     System.out.println();
 }   
+
+/*
+    Check if array is sorted--------------------
+*/
+static void arraySorted(int arr[]) {
+
+    boolean isSorted = true;
+
+    for(int i = 0; i < arr.length - 1; i++) {
+
+        if(arr[i] > arr[i+1]) {
+
+            isSorted = false;
+            break;
+        }
+    }
+    if(isSorted) {
+
+        System.out.println(" sorted");
+    }
+    else {
+        System.out.println("not sorted");
+    }
+}
     public static void main(String[] args) {
-        int arr[] = {1,0,2,0,3,4};
-        moveZeroesToEnd(arr);
+        int arr[] = {1,2,3,4};
+        // moveZeroesToEnd(arr);
+        arraySorted(arr);
     }
 }
