@@ -46,22 +46,7 @@ static void arraySorted(int arr[]) {
 /*
     Find missing number in array (basic)-----------------
 */
-static void reversArrayWithPointer (int arr[]) {
-
-    int start = 0;
-    int end = arr.length - 1;
-    while(start < end) {
-
-        int temp   = arr[start];
-        arr[start]  = arr[end];
-        arr[end] = temp;
-
-    start++;
-    end--;
-    }
-    for(int num : arr) System.out.println(num);
-}
-    static void missingNumber(int arr[]) {
+   static void missingNumber(int arr[]) {
     int n = 4;
     int totalArray = n * (n + 1)/2;
     int sumArray = 0;
