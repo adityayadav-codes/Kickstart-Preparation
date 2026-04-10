@@ -61,7 +61,16 @@ static void reversArrayWithPointer (int arr[]) {
 /*
     Find missing number in array (basic)-----------------
 */
+static void missingNumber(int[]arr) {
 
+    int num = 4;
+
+    for(int i = 0; i < num; i++ ) [
+        int total = 
+    ]
+
+
+}
  
     public static void main(String[] args) {
         int arr[] = {1,3,4};
